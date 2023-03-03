@@ -8,9 +8,13 @@
 </head>
 <body>
     <script>
-    var num1 = parseInt(prompt("enter first value ","55"));
-    var num2 = parseInt(prompt("enter first value ","55"));
-    alert(num1+num2);
+    function addTwoParam(x,y){
+        var sum=0;
+        sum= x + y;
+        return sum;
+    }
+    var result = addTwoParam(10,15);
+    console.log(result);
     </script>
 </body>
 </html>

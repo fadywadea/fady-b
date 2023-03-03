@@ -9,12 +9,14 @@
 <body>
     <script>
     function addTwoParam(x,y){
-        var sum=0;
-        sum= x + y;
-        return sum;
+        x=(x==undefined)?0:x;
+        y=(y==undefined)?0:y;
+        //var sum=0;
+        //sum= x + y;
+        return x+y;
     }
     var result = addTwoParam(10,15);
-    console.log(result);
+    //console.log(result);
     </script>
 </body>
 </html>

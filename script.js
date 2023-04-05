@@ -100,3 +100,23 @@ associative["numbers"] = ["0,1,2,3,4,5,6,7,8,9"];
 for(i in associative){
     console.log(i+":"+associative[i])
 }
+
+var myError = new Error("Custom Error");
+console.log(myError.name);
+console.log(myError.message);
+//throw myError;
+try {
+    var result = parseInt(prompt("enter value between 10 and 20","15"));
+if(result < 10)
+    throw "less than expected";
+else if(result > 20)
+    throw new RangeError ("out of range");
+else
+    alert("value within accepcted range");
+    console.log("inside try block")
+}
+catch(e){
+    console.log("catch block executed after error caught");
+}
+
+console.log("Done");

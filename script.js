@@ -98,7 +98,7 @@ associative["third name"] = "bikhet";
 associative["numbers"] = ["0,1,2,3,4,5,6,7,8,9"];
 
 for(i in associative){
-    console.log(i+":"+associative[i])
+    console.log(i+":"+associative[i]);
 }
 
 var myError = new Error("Custom Error");
@@ -113,10 +113,20 @@ else if(result > 20)
     throw new RangeError ("out of range");
 else
     alert("value within accepcted range");
-    console.log("inside try block")
-}
-catch(e){
+    console.log("inside try block");
+} catch (e) {
+    if (e instanceof RangeError){
+        console.log("this is range error");
+        console.log(e.name);
+        console.log(e.message);
+    }
+    else if(e=="less than expected"){
+        console.log("low value");
+    }
+    ///console.logg("catch error occured")
     console.log("catch block executed after error caught");
+} finally{
+    ///rest of code exec or not
+    console.log("Done");
 }
-
-console.log("Done");
+console.log("after finally block");

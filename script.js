@@ -101,6 +101,7 @@ for(i in associative){
     console.log(i+":"+associative[i]);
 }
 
+///try and catch and finally {error handling}
 var myError = new Error("Custom Error");
 console.log(myError.name);
 console.log(myError.message);

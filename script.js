@@ -136,11 +136,15 @@ console.log("after finally block");
 ///onerror event
 onerror = errorHandle;
 
-function errorHandle (msg,url,l,col,err){
-    console.log(msg)
+function errorHandle(msg,url,l,col,err){
+    console.log(msg);
+    console.log(url);
+    console.log(l);
+    console.log(col);
+    console.log(err);
     //true for don't show the error 
     //false for show the error
-    return true; 
+    return false; 
 }
 var myError = new Error("Custom Error");
 console.log(myError.name);
@@ -153,7 +157,7 @@ console.log(myError.message);
     if(result < 10)
         throw "less than expected";
     else if(result > 20)
-        throw new RangeError ("out of range");
+        throw new RangeError("out of range");
     else
         alert("value within accepcted range");
     console.log("inside try block");

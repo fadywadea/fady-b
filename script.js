@@ -89,9 +89,9 @@ function comparsion(a,b){
 //associative array
 var associative = new Array();
 
-var x = "first value";
+var b = "first value";
 
-associative[x] = 10000;
+associative[b] = 10000;
 associative["first name"] = "fady";
 associative["sec name"] = "wadea";
 associative["third name"] = "bikhet";
@@ -163,3 +163,20 @@ console.log(myError.message);
     console.log("inside try block");
     console.log("catch block executed after error caught");
 console.log("Done");
+
+//function
+var x = 10;
+x = "hi";
+
+//function statement
+function fun1(e,f){
+    return e+f;
+}
+
+//assign function to variable
+//anonymous function
+var myFun = function (e,f){
+    return a+b;
+}
+
+myFun(10,11);//21

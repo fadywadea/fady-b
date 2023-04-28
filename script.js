@@ -176,7 +176,8 @@ function fun1(e,f){
 //assign function to variable
 //anonymous function
 //function expression
-var myFun = function (e,f){
+//literal function creation
+var myFun = function (a,b){
     return a+b;
 }
 

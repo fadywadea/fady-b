@@ -162,7 +162,7 @@ console.log(myError.message);
         alert("value within accepcted range");
     console.log("inside try block");
     console.log("catch block executed after error caught");
-console.log("Done");
+    console.log("Done");
 
 //function
 var x = 10;
@@ -175,6 +175,7 @@ function fun1(e,f){
 
 //assign function to variable
 //anonymous function
+//function expression
 var myFun = function (e,f){
     return a+b;
 }

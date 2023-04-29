@@ -169,8 +169,8 @@ var x = 10;
 x = "hi";
 
 //function statement
-function fun1(e,f){
-    return e+f;
+function fun1(a,b){
+    return a+b;
 }
 
 //assign function to variable
@@ -182,3 +182,23 @@ var myFun = function (a,b){
 }
 
 myFun(10,11);//21
+
+//assign function into array element
+var arr=[1,2,3,"fady",function (a,b){
+    return a+b;
+},"xyz"];
+
+var myarr = arr[4];
+console.log(myarr(10,11));
+
+console.log(arr[4](10,11));
+
+//return function from another function
+function newaddingfunction(x,y,z){
+    var sum = function(){
+        return x + y + z
+    }
+    return sum;
+}
+
+var result = newaddingfunction(1,2,3);

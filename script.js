@@ -195,10 +195,11 @@ console.log(arr[4](10,11));
 
 //return function from another function
 function newaddingfunction(x,y,z){
-    var sum = function(){
-        return x + y + z
-    }
-    return sum;
+    //var sum = function(){return x + y + z}
+    return function(){
+            return x + y + z;
+    };
 }
 
-var result = newaddingfunction(1,2,3);
+var resolt = newaddingfunction(1,2,3);
+console.log(resolt());
